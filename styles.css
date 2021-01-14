@@ -1,4 +1,4 @@
-    * {
+        * {
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
@@ -114,14 +114,31 @@
     img {
         vertical-align: middle;
     }
-    /* Slideshow container */
+    
+    .dot {
+        position: relative;
+        bottom: 50px;
+        right: 50px;
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active,
+    .dot:hover {
+        background-color: rgb(235, 32, 110);
+    }
     
     .slideshow {
         max-width: 100%;
         position: relative;
         margin: auto;
     }
-    /* Next & previous buttons */
     
     .prev,
     .next {
